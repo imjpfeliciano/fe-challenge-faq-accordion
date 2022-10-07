@@ -1,0 +1,142 @@
+@font-face {
+  font-family: KumbSans;
+  src: url("../fonts/KumbSans/KumbhSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: KumbSansBold;
+  src: url("../fonts/KumbSans/static/KumbhSans-Bold.ttf");
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  font-family: KumbSans;
+  color: hsl(240deg, 6%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    overflow: hidden;
+  }
+}
+
+.bg-images {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-images .card-image {
+  position: absolute;
+  width: 200px;
+  top: -90px;
+}
+.bg-images .bg-pattern img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .bg-images {
+    position: relative;
+  }
+  .bg-images .card-image img {
+    position: absolute;
+    top: 3rem;
+    left: -150px;
+    height: 300px;
+  }
+  .bg-images .bg-pattern img {
+    position: abolute;
+    left: -150px;
+    width: 100%;
+  }
+}
+
+.card-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: KumbSansBold;
+  color: black;
+}
+
+.faq-list {
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 1.5rem;
+}
+.faq-list .faq-item {
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-list .faq-item:hover {
+  cursor: pointer;
+}
+.faq-list .faq-item:not(:first-of-type) {
+  margin-top: 0.5rem;
+}
+.faq-list .faq-item .faq-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.faq-list .faq-item .faq-control:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.faq-list .faq-item .faq-control img {
+  width: 10px;
+  height: 8px;
+}
+.faq-list .faq-item .faq-control.active {
+  color: hsl(237deg, 12%, 33%);
+  font-weight: bold;
+}
+.faq-list .faq-item .faq-control.active img {
+  transform: rotate(180deg);
+}
+.faq-list .faq-item .faq-answer {
+  padding-right: 1rem;
+  display: none;
+  color: hsl(240deg, 6%, 50%);
+}
+.faq-list .faq-item .faq-answer.active {
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
